@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Paws & Whiskers Haven</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: url("ss.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: background 0.5s ease;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #f39c6b;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-family: 'Rock Salt', cursive;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f39c6b;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .login-box {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .login-box h2 {
+            color: #f39c6b;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+
+        .login-box input[type="email"],
+        .login-box input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 2px solid #f39c6b;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 1em;
+        }
+
+        .login-box input::placeholder {
+            color: #ddd;
+        }
+
+        .login-box input[type="submit"] {
+            background-color: #f39c6b;
+            color: #000;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 1em;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-box input[type="submit"]:hover {
+            background-color: #f1c40f;
+        }
+
+        .login-box p {
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+
+        .login-box a {
+            color: #f39c6b;
+            text-decoration: none;
+        }
+
+        .login-box a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 15px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Paws & Whiskers Haven</h1>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AdoptGallery.html">Pets Gallery</a></li>
+            <li><a href="AdoptioForm.html">Adoption Form</a></li>
+            <li><a href="Join.html">Join</a></li>
+            <li><a href="Login.html">Log-in</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="login-box">
+        <h2>Login to Your Account</h2>
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+        <p>Don't have an account? <a href="register.html">Sign up here</a></p>
+        <p><a href="forgot.html">Forgot password?</a></p>
+    </div>
+</main>
+
+<footer>
+    &copy; 2025 Paws & Whiskers Haven - All rights reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Pet - Paws & Whiskers Haven</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: url("w6.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: background 0.5s ease;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #f39c6b;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        header h1 {
+            font-family: 'Rock Salt', cursive;
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        header h1:hover {
+            transform: scale(1.1);
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 25px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #f39c6b;
+        }
+
+        main {
+            padding: 50px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            margin: 20px;
+            border-radius: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .content h2, .content h3 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #f39c6b;
+            transition: color 0.3s ease;
+        }
+
+        .content h2:hover, .content h3:hover {
+            color: #f1c40f;
+        }
+
+        .content form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .content label {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            text-align: left;
+            width: 80%;
+        }
+
+        .content input, .content textarea, .content select {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 2px solid #f39c6b;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-size: 1em;
+        }
+
+        .content input[type="submit"] {
+            background-color: #f39c6b;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .content input[type="submit"]:hover {
+            background-color: #f1c40f;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        footer:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Paws & Whiskers Haven</h1>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AdptioGallery.html">Pets Gallery</a></li>
+            <li><a href="AdoptioForm.html">Adoption Form</a></li>
+            <li><a href="Join.html">Join</a></li>
+            <li><a href="Login.html">Log-in</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="content">
+        <h2>Adopt a Pet</h2>
+        <p>We are thrilled that you are interested in adopting a pet from Paws & Whiskers Haven. Please fill out the adoption form below, and our team will get in touch with you soon.</p>
+
+        <form action="#" method="post">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="adoptPet">Pet You Wish to Adopt</label>
+            <select id="adoptPet" name="adoptPet" required>
+                <option value="">Select a Pet</option>
+                <option value="Fluffy">Fluffy - 2 years old - Female</option>
+                <option value="Max">Max - 4 years old - Male</option>
+                <option value="Bella">Bella - 3 years old - Female</option>
+                <option value="Buddy">Buddy - 5 years old - Male</option>
+                <option value="Luna">Luna - 1 year old - Female</option>
+                <option value="Charlie">Charlie - 3 years old - Male</option>
+                <option value="Milo">Milo - 2 years old - Male</option>
+                <option value="Rocky">Rocky - 3 years old - Male</option>
+                <option value="Ginger">Ginger - 1 year old - Female</option>
+                <option value="Buster">Buster - 4 years old - Male</option>
+            </select>
+
+            <label for="experience">Previous Pet Ownership Experience</label>
+            <textarea id="experience" name="experience" rows="4"></textarea>
+
+            <label for="whyAdopt">Why Do You Want to Adopt This Pet?</label>
+            <textarea id="whyAdopt" name="whyAdopt" rows="4" required></textarea>
+
+            <input type="submit" value="Submit Adoption Form">
+        </form>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 Paws & Whiskers Haven - All rights reserved.
+</footer>
+
+</body>
+</html>
